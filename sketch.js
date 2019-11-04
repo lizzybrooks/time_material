@@ -8,7 +8,7 @@ let fader = 254;
 let fading = true;
 let nextMeeting = "Sunday, November 24th, 2-5pm \n 1364 Rose St. Berkeley, CA 94702 \n (thank you Neil for hosting!)"
 let prompt = "Externalize your worry so you can talk back to it, or \n Picture your anxiety as a character and give it a name."
-let mission = "Artists|Parents \n exploring slowness \n celebrating process \n making work in community. "
+let mission = "Artists | Parents \n exploring slowness \n celebrating process \n making work in community. "
 let contact = "time.material.collective@gmail.com | @time.material"
 
 let sands = [];
