@@ -6,7 +6,7 @@ let fontRegular;
 
 let fader = 254;
 let fading = true;
-let nextMeeting = "Sunday, January 5th, 1-4pm \n A Haunting \n 86 Sunnyside Ave, Mill Valley, CA"
+let nextMeeting = "A Haunting \n Sunday, January 5th, 1-4pm \n 86 Sunnyside Ave, Mill Valley, CA"
 let prompt = "Do something that scares you."
 let mission = "Artists | Parents \n exploring slowness \n celebrating process \n making work in community. "
 let contact = "time.material.collective@gmail.com | @time.material"
