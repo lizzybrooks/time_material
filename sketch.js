@@ -105,7 +105,10 @@ async function setup() {
     ]);
 
     pixelDensity(min(displayDensity(), 2));   // 3x phones: keep the buffer blit cheap
-    createCanvas(windowWidth, pageH());
+    const cnv = createCanvas(windowWidth, pageH());
+    // p5 2.x sets touch-action: none on the canvas, which stops touch scrolling.
+    // pan-y hands vertical swipes back to the browser so the phone layout scrolls.
+    cnv.elt.style.touchAction = 'pan-y';
     lastWidth = windowWidth;
     angleMode(DEGREES);
     textAlign(CENTER);
@@ -282,7 +285,7 @@ const SPLASH = [
     { word: 'work', u: 0.70, dy: 1.9, a: 12 },
     { word: 'in', u: 0.42, dy: 3.2, a: -25 },
     // under "in", tilted halfway between "in" and the wall
-    { word: 'community.', u: 0.62, dy: 4.5, a: -10 },
+    { word: 'community.', u: 0.42, dy: 4.5, a: () => -(wallAngle() + 25) / 2 },
 ];
 
 function drawSplash(g, size, baseY) {
