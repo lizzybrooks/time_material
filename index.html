@@ -11,7 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/p5@2.3.2/lib/p5.min.js"></script>
   <!-- p5.dom is part of core p5 now; p5.sound was never used; p5.scribble is
          inlined in sketch.js (it relies on curveVertex, removed in p5 2.x). -->
-  <script src="sketch.js"></script>
+  <script src="sketch.js?v=3"></script>
 
   <style>
     html,
@@ -26,8 +26,12 @@
     }
 
     /* vertical scroll allowed: the phone layout is two screens tall */
+    /* the sketch has no mouse/touch interaction, so let swipes pass through
+         to the page: p5 2.x's own touch handlers otherwise block scrolling */
     canvas {
       display: block;
+      pointer-events: none;
+      touch-action: pan-y !important;
     }
   </style>
 </head>
