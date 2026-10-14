@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.dom.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-    <script src="libraries/p5.scribble.js"></script>
-    <script src="sketch.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  <style> body {padding: 0; margin: 0;} </style>
-  </head>
-  <body>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time Material</title>
+
+  <!-- p5.js 2.x (pinned). To go fully offline, download this file to libraries/p5.min.js
+         and point the src there instead. -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@2.3.2/lib/p5.min.js"></script>
+  <!-- p5.dom is part of core p5 now; p5.sound was never used; p5.scribble is
+         inlined in sketch.js (it relies on curveVertex, removed in p5 2.x). -->
+  <script src="sketch.js"></script>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: rgb(240, 240, 240);
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    /* vertical scroll allowed: the phone layout is two screens tall */
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+
+<body></body>
+
 </html>
